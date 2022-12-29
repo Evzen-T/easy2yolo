@@ -10,20 +10,18 @@
 ---
 ## **1 - Decide on object to detect**
 - Whats the issue at hand?
-    1. Security issue
-    2. Safety issue
-    3. 
+    
+    eg. problem : Security issue, Safety issue
+
 - What object are you detecting?
-    1. Face (Facial Recognition)
-    2. Helmet (Object Detection)
-    3. 
+
+    eg. solution : Face (Facial Recognition), Helmet (Object Detection)
 
 ## **2 - Dataset Collection**
 - What method are you using to collect data?
-    1. Camera/Webcam
-        - Use takepic.ipynb
-    2. Online sources
-        - Use Open Images Dataset ([OIDv7](https://storage.googleapis.com/openimages/web/visualizer/index.html)) by google
+    1. Camera/Webcam - Use dataset_collection/**cam.py**
+    2. Oak camera - Use dataset_collection/**oak.py**
+    3. Online sources - Use Open Images Dataset ([OIDv7](https://storage.googleapis.com/openimages/web/visualizer/index.html)) by google
 
 ## **3 - Dataset Annotation + Cleaning**
 **Annotation Tools:**

@@ -7,7 +7,7 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='../yolov5/runs/trai
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FPS,30)
 
-while cap.isOpen():
+while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         continue

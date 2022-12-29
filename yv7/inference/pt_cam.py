@@ -7,7 +7,7 @@ model = torch.hub.load('../yolov7', 'custom', path='../yolov7/runs/train/exp/wei
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FPS,30)
 
-while cap.isOpen():
+while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         continue
