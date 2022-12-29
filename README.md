@@ -78,10 +78,10 @@ label-studio
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
 - Choose Yolo Framework
-    - [YoloV5](https://github.com/Evzen-T/easy2yolo#go-to-yv5-on-terminal)
-    - [YoloV7](https://github.com/Evzen-T/easy2yolo#go-to-yv7-on-terminal)
+    - [YoloV5 Workflow](https://github.com/Evzen-T/easy2yolo#go-to-yv5-folder) ([YoloV5 Github repo](https://github.com/ultralytics/yolov5))
+    - [YoloV7 Workflow](https://github.com/Evzen-T/easy2yolo#go-to-yv7-folder) ([YoloV7 Github repo](https://github.com/WongKinYiu/yolov7))
 ---
-# Go to yv5 on terminal
+# Go to yv5 folder
 ## **Virtual Environment**
 1. python3 -m venv virtualv5
 2. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
@@ -103,6 +103,7 @@ label-studio
         2. Open jupyter notebook
         3. Click on Upload
         4. Search for easy2yolo/yv5/training.ipynb
+
 2. Edit yaml file in yolov5 folder ([template](./data.yaml))
 3. Run dependencies commands
 4. Choose yolov5 pretrain weights
@@ -142,10 +143,14 @@ python3 conversion.py
         4. Run 'python3 pt_images.py'
 
 ---
-# Go to yv7 on terminal
+# Go to yv7 folder
 ## **Virtual Environment**
 1. python3 -m venv virtualv7
 2. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
+3. pip install opencv-python
+4. pip install blobconverter
+5. pip install depthai
+6. pip install depthai-sdk
 
 ## **4 - YoloV7 Training**
 1. Run jupyter notebook
@@ -178,22 +183,22 @@ python3 conversion.py
 ## **6 - YoloV7 Inference**
 - Inference with Webcam
     - Pytorch
-        1. Go to easy2yolo/yv7/pt_cam.py
+        1. Go to inference/pt_cam.py
         2. Change pt weights file path
         3. Run 'python3 pt_cam.py'
 
 - Inference with Oak camera
     - Pytorch
-        1. Go to easy2yolo/yv7/pt_oak.py
+        1. Go to inference/pt_oak.py
         2. Change pt weights file path
         3. Run 'python3 pt_oak.py'
     - Blob
-        1. Go to easy2yolo/yv7/blob_oak.py
+        1. Go to inference/blob_oak.py
         2. Change blob weights file path
         3. Run 'python3 blob_oak.py'
 
 - Inference with Images
     - Pytorch
-        1. Go to easy2yolo/yv7/pt_images.py
+        1. Go to inference/pt_images.py
         2. Change pt weights file path
         3. Run 'python3 pt_images.py'
