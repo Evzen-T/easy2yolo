@@ -78,8 +78,8 @@ label-studio
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
 - Choose Yolo Framework
-    - [YoloV5]()
-    - [YoloV7]()
+    - [YoloV5](https://github.com/Evzen-T/easy2yolo#go-to-yv5-on-terminal)
+    - [YoloV7](https://github.com/Evzen-T/easy2yolo#go-to-yv7-on-terminal)
 ---
 # Go to yv5 on terminal
 ## **Virtual Environment**
