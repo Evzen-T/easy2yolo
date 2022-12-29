@@ -71,7 +71,7 @@ label-studio
 - Unable to identify features of object to detect
 
 ---
-### _**Things to install before continuing**_
+### _**Things to do before continuing**_
 - Install jupyter notebook
     1. Locally
         - pip install notebook
@@ -81,72 +81,79 @@ label-studio
     - [YoloV5]()
     - [YoloV7]()
 ---
+# Go to yv5 on terminal
+## **Virtual Environment**
+1. python3 -m venv virtualv5
+2. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
+3. pip install opencv-python
+4. pip install blobconverter
+5. pip install depthai
+6. pip install depthai-sdk
+
 ## **4 - YoloV5 Training**
 1. Run jupyter notebook
     - Locally
         ```
-        jupyter notebook #On terminal
+        jupyter notebook
         ```
-        go to easy2yolo/yv5/training.ipynb
+        find to easy2yolo/yv5/training.ipynb
 
     - Anaconda
-    1. Search for anaconda navigator on terminal/search bar
-    2. Open jupyter notebook
-    3. Click on Upload
-    4. Search for easy2yolo/yv5/training.ipynb
-2. Create yaml file in yolov5 folder ([template]())
+        1. Search for anaconda navigator on terminal/search bar
+        2. Open jupyter notebook
+        3. Click on Upload
+        4. Search for easy2yolo/yv5/training.ipynb
+2. Edit yaml file in yolov5 folder ([template](./data.yaml))
 3. Run dependencies commands
 4. Choose yolov5 pretrain weights
 5. Run training command
+6. Locate trained pt weights (./yolov5/runs/train/exp)
 
 ## **5 - YoloV5 Conversion**
-- Yolov5
-    1. Setup Virtual environment
-        ```
-        python3 -m venv yv5
-        source yv5/bin/activate
-        OR
-        source yv5/scripts/activate
-        ```
-    2. Setup conversion file
-    Go to easy2yolo/yv5/conversion.py
-    Change fpath to location of trained yolov5 pt weights
+1. Setup conversion file
+cd easy2yolo/yv5
+Edit fpath to location of trained yolov5 pt weights on conversion.py
 
-    3. Run conversion
-    Run 'cd easy2yolo/yv5'
-    Run 'python3 conversion.py'
+2. Run conversion
+python3 conversion.py
 
 ## **6 - YoloV5 Inference**
-- Inference with Webcam
-    - Pytorch
-        1. Go to easy2yolo/yv5/pt_cam.py
+- Inference with **Webcam/camera in general**
+    - **Pytorch**
+        1. Go to inference/pt_cam.py
         2. Change pt weights file path
         3. Run 'python3 pt_cam.py'
 
-- Inference with Oak camera
-    - Pytorch
-        1. Go to easy2yolo/yv5/pt_oak.py
+- Inference with **Oak camera**
+    - **Pytorch**
+        1. Go to inference/pt_oak.py
         2. Change pt weights file path
         3. Run 'python3 pt_oak.py'
-    - Blob
-        1. Go to easy2yolo/yv5/blob_oak.py
+    - **Blob**
+        1. Go to inference/blob_oak.py
         2. Change blob weights file path
         3. Run 'python3 blob_oak.py'
 
-- Inference with Images
-    - Pytorch
-        1. Go to easy2yolo/yv5/pt_images.py
+- Inference with **Images**
+    - **Pytorch**
+        1. Go to inference/pt_images.py
         2. Change pt weights file path
-        3. Run 'python3 pt_images.py'
+        3. Change test image file path
+        4. Run 'python3 pt_images.py'
 
 ---
+# Go to yv7 on terminal
+## **Virtual Environment**
+1. python3 -m venv virtualv7
+2. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
+
 ## **4 - YoloV7 Training**
 1. Run jupyter notebook
     - Locally
         ```
-        jupyter notebook #On terminal
+        jupyter notebook
         ```
-        go to easy2yolo/yv7/training.ipynb
+        find to easy2yolo/yv7/training.ipynb
 
     - Anaconda
         1. Search for anaconda navigator on terminal/search bar
@@ -154,26 +161,19 @@ label-studio
         3. Click on Upload
         4. Search for easy2yolo/yv7/training.ipynb
 
-2. Create yaml file in yolov7 folder ([template]())
+2. Edit yaml file in yolov5 folder ([template](./data.yaml))
 3. Run dependencies commands
 4. Choose yolov7 pretrain weights
 5. Run training command
+6. Locate trained pt weights (./yolov7/runs/train/exp)
 
 ## **5 - YoloV7 Conversion**
-1. Setup Virtual environment
-    ```
-    python3 -m venv yv7
-    source yv7/bin/activate
-    OR
-    source yv7/scripts/activate
-    ```
-2. Setup conversion file
-Go to easy2yolo/yv7/conversion.py
-Change fpath to location of trained yolov7 pt weights
+1. Setup conversion file
+cd easy2yolo/yv7
+Edit fpath to location of trained yolov7 pt weights on conversion.py
 
-3. Run conversion
-Run 'cd easy2yolo/yv7'
-Run 'python3 conversion.py'
+2. Run conversion
+python3 conversion.py
 
 ## **6 - YoloV7 Inference**
 - Inference with Webcam
