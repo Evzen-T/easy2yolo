@@ -76,8 +76,8 @@ label-studio
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
 - Choose **Yolo Framework**
-    - YoloV5 [Training](https://github.com/Evzen-T/easy2yolo#go-to-yv5-folder) / [Github repo](https://github.com/ultralytics/yolov5)
-    - YoloV7 [Training](https://github.com/Evzen-T/easy2yolo#go-to-yv7-folder) / [Github repo](https://github.com/WongKinYiu/yolov7)
+    - YoloV5 [Training](yv5/training.ipynb) / [Github repo](https://github.com/ultralytics/yolov5)
+    - YoloV7 [Training](yv7/training.ipynb) / [Github repo](https://github.com/WongKinYiu/yolov7)
 
 - **Virtual Environment**
 
