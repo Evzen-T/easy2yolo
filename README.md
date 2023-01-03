@@ -69,134 +69,87 @@ label-studio
 - Unable to identify features of object to detect
 
 ---
-### _**Things to do before continuing**_
-- Install jupyter notebook
+### **Things to do before continuing**
+- Install **jupyter notebook**
     1. Locally
         - pip install notebook
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
-- Choose Yolo Framework
-    - [YoloV5 Workflow](https://github.com/Evzen-T/easy2yolo#go-to-yv5-folder) ([YoloV5 Github repo](https://github.com/ultralytics/yolov5))
-    - [YoloV7 Workflow](https://github.com/Evzen-T/easy2yolo#go-to-yv7-folder) ([YoloV7 Github repo](https://github.com/WongKinYiu/yolov7))
----
-# Go to yv5 folder
-## **Virtual Environment**
-1. python3 -m venv virtualv5
-2. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
-3. pip install opencv-python
-4. pip install blobconverter
-5. pip install depthai
-6. pip install depthai-sdk
+- Choose **Yolo Framework**
+    - YoloV5 [Training](https://github.com/Evzen-T/easy2yolo#go-to-yv5-folder) / [Github repo](https://github.com/ultralytics/yolov5)
+    - YoloV7 [Training](https://github.com/Evzen-T/easy2yolo#go-to-yv7-folder) / [Github repo](https://github.com/WongKinYiu/yolov7)
 
-## **4 - YoloV5 Training**
+- **Virtual Environment**
+
+    - YoloV5
+        1. python3 -m venv virtualv5
+        2. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
+
+    - YoloV7
+        1. python3 -m venv virtualv7
+        2. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
+
+
+    3. pip install opencv-python
+    4. pip install blobconverter
+    5. pip install depthai
+    6. pip install depthai-sdk
+
+### **To Note**
+- YoloV5 & YoloV7 are different repositories, thus different way of loading models.
+- Use respective inference python files
+
+## **4 - Training**
 1. Run jupyter notebook
     - Locally
         ```
         jupyter notebook
         ```
-        find to easy2yolo/yv5/training.ipynb
+        find to ./yv5/training.ipynb **OR** ./yv7/training.ipynb
 
     - Anaconda
         1. Search for anaconda navigator on terminal/search bar
         2. Open jupyter notebook
         3. Click on Upload
-        4. Search for easy2yolo/yv5/training.ipynb
+        4. Search for easy2yolo/yv5/training.ipynb **OR** easy2yolo/yv7/training.ipynb
 
-2. Edit yaml file in yolov5 folder ([template](./data.yaml))
+
+
+2. Edit yaml file in yolov5 **or** yolov7 folder ([template](./data.yaml))
 3. Run dependencies commands
-4. Choose yolov5 pretrain weights
+4. Choose yolov5 **or** yolov7 pretrain weights
 5. Run training command
-6. Locate trained pt weights (./yolov5/runs/train/exp)
+6. Locate trained pt weights (./yolov5/runs/train/exp/weights **or** ./yolov7/runs/train/exp/weights)
 
-## **5 - YoloV5 Conversion**
+## **5 - Conversion**
 1. Setup conversion file
-cd easy2yolo/yv5
-Edit fpath to location of trained yolov5 pt weights on conversion.py
+- cd easy2yolo/yv5 **OR** cd easy2yolo/yv7
+- Edit fpath to location of trained pt weights on conversion.py
 
 2. Run conversion
 python3 conversion.py
 
-## **6 - YoloV5 Inference**
-- Inference with **Webcam/camera in general**
-    - **Pytorch**
-        1. Go to inference/pt_cam.py
-        2. Change pt weights file path
-        3. Run 'python3 pt_cam.py'
+## **6 - Inference**
 
-- Inference with **Oak camera**
-    - **Pytorch**
-        1. Go to inference/pt_oak.py
-        2. Change pt weights file path
-        3. Run 'python3 pt_oak.py'
-    - **Blob**
-        1. Go to inference/blob_oak.py
-        2. Change blob weights file path
-        3. Run 'python3 blob_oak.py'
+Inference with **Webcam/camera**
+- **Pytorch**
+    1. Go to inference/pt_cam.py
+    2. Change pt weights file path
+    3. Run 'python3 pt_cam.py'
 
-- Inference with **Images**
-    - **Pytorch**
-        1. Go to inference/pt_images.py
-        2. Change pt weights file path
-        3. Change test image file path
-        4. Run 'python3 pt_images.py'
+Inference with **Oak camera**
+- **Pytorch**
+    1. Go to inference/pt_oak.py
+    2. Change pt weights file path
+    3. Run 'python3 pt_oak.py'
+- **Blob**
+    1. Go to inference/blob_oak.py
+    2. Change blob weights file path
+    3. Run 'python3 blob_oak.py'
 
----
-# Go to yv7 folder
-## **Virtual Environment**
-1. python3 -m venv virtualv7
-2. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
-3. pip install opencv-python
-4. pip install blobconverter
-5. pip install depthai
-6. pip install depthai-sdk
-
-## **4 - YoloV7 Training**
-1. Run jupyter notebook
-    - Locally
-        ```
-        jupyter notebook
-        ```
-        find to easy2yolo/yv7/training.ipynb
-
-    - Anaconda
-        1. Search for anaconda navigator on terminal/search bar
-        2. Open jupyter notebook
-        3. Click on Upload
-        4. Search for easy2yolo/yv7/training.ipynb
-
-2. Edit yaml file in yolov5 folder ([template](./data.yaml))
-3. Run dependencies commands
-4. Choose yolov7 pretrain weights
-5. Run training command
-6. Locate trained pt weights (./yolov7/runs/train/exp)
-
-## **5 - YoloV7 Conversion**
-1. Setup conversion file
-cd easy2yolo/yv7
-Edit fpath to location of trained yolov7 pt weights on conversion.py
-
-2. Run conversion
-python3 conversion.py
-
-## **6 - YoloV7 Inference**
-- Inference with Webcam
-    - Pytorch
-        1. Go to inference/pt_cam.py
-        2. Change pt weights file path
-        3. Run 'python3 pt_cam.py'
-
-- Inference with Oak camera
-    - Pytorch
-        1. Go to inference/pt_oak.py
-        2. Change pt weights file path
-        3. Run 'python3 pt_oak.py'
-    - Blob
-        1. Go to inference/blob_oak.py
-        2. Change blob weights file path
-        3. Run 'python3 blob_oak.py'
-
-- Inference with Images
-    - Pytorch
-        1. Go to inference/pt_images.py
-        2. Change pt weights file path
-        3. Run 'python3 pt_images.py'
+Inference with **Images**
+- **Pytorch**
+    1. Go to inference/pt_images.py
+    2. Change pt weights file path
+    3. Change test image file path
+    4. Run 'python3 pt_images.py'
