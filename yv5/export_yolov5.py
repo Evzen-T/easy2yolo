@@ -1,10 +1,10 @@
 import sys
-sys.path.append("./yolo/yolov5")
+sys.path.append("./yv5/yolov5")
 import torch
 
-from yolov5.models.experimental import attempt_load
-from yolov5.models.common import Conv
-from yolov5.models.yolo import Detect
+from yv5_conversion.models.experimental import attempt_load
+from yv5_conversion.models.common import Conv
+from yv5_conversion.models.yolo import Detect
 
 import torch.nn as nn
 import onnx

@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("./yolo/yolov7")
+sys.path.append("./yv7/yolov7")
 
 import torch
 from yolov7.models.experimental import attempt_load

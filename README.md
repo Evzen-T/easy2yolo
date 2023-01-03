@@ -94,6 +94,9 @@ label-studio
     4. pip install blobconverter
     5. pip install depthai
     6. pip install depthai-sdk
+    7. pip install onnx
+    8. pip install onnxruntime
+    9. pip install onnxsim
 
 ### **To Note**
 - YoloV5 & YoloV7 are different repositories, thus different way of loading models.
