@@ -1,11 +1,11 @@
 import sys
 
-sys.path.append("./yv7/yolov7")
+sys.path.append("./yv7/yv7_conversion")
 
 import torch
-from yolov7.models.experimental import attempt_load
-from yolov7.models.common import Conv
-from yolov7.models.yolo import Detect
+from yv7_conversion.models.experimental import attempt_load
+from yv7_conversion.models.common import Conv
+from yv7_conversion.models.yolo import Detect
 import torch.nn as nn
 import onnx
 from exporter import Exporter
