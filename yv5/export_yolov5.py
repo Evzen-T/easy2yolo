@@ -1,5 +1,5 @@
 import sys
-sys.path.append("./yv5/yv5_conversion")
+sys.path.append("./yv5_conversion")
 import torch
 
 from yv5_conversion.models.experimental import attempt_load

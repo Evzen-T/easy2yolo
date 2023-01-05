@@ -1,7 +1,7 @@
 from export_yolov7 import YoloV7Exporter
 from pathlib import Path
 
-downloadpth = Path("./yolov7/runs/train/exp/weights/")
+downloadpth = Path("/home/evzen/dataset/weights/v7-tiny/l1/weights")
 filepth = "best.pt"
 input_shape = [640,416]
 conv_id = 1

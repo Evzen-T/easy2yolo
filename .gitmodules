@@ -1,6 +1,1 @@
-[submodule "yv5/yv5_conversion"]
-	path = yv5/yv5_conversion
-	url = https://github.com/Evzen-T/yv5_conversion.git
-[submodule "yv7/yv7_conversion"]
-	path = yv7/yv7_conversion
-	url = https://github.com/Evzen-T/yv7_conversion.git
+

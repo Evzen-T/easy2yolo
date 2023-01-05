@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("./yv7/yv7_conversion")
+sys.path.append("./yv7_conversion")
 
 import torch
 from yv7_conversion.models.experimental import attempt_load
