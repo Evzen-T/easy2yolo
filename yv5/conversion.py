@@ -2,7 +2,7 @@ from export_yolov5 import YoloV5Exporter
 from pathlib import Path
 
 downloadpth = Path("./yolov5/runs/train/exp/weights")
-filepth = "./yolov5/runs/train/exp/weights/best.pt"
+filepth = "best.pt"
 input_shape = [640,416]
 conv_id = 1
 
