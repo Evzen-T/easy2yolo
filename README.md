@@ -1,11 +1,11 @@
 # **Easy to Yolo**
 ## **A Easy step by step guide to YoloV5 & YoloV7**
-1. Decide on object to detect
-2. Dataset Collection
-3. Dataset Annotation + Cleaning
-4. Training
-5. Conversion
-6. Inference
+1. [Decide on object to detect](https://github.com/Evzen-T/easy2yolo#1---decide-on-object-to-detect)
+2. [Dataset Collection](https://github.com/Evzen-T/easy2yolo#2---dataset-collection)
+3. [Dataset Annotation + Cleaning](https://github.com/Evzen-T/easy2yolo#3---dataset-annotation--cleaning)
+4. [Training](https://github.com/Evzen-T/easy2yolo#4---training)
+5. [Conversion](https://github.com/Evzen-T/easy2yolo#5---conversion)
+6. [Inference](https://github.com/Evzen-T/easy2yolo#6---inference)
 
 ---
 ## **1 - Decide on object to detect**
@@ -84,23 +84,16 @@ label-studio
     - YoloV5
         1. python3 -m venv virtualv5
         2. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
+        3. pip install -r requirements.txt
 
     - YoloV7
         1. python3 -m venv virtualv7
         2. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
+        3. pip install -r requirements.txt
 
-
-    3. pip install opencv-python
-    4. pip install blobconverter
-    5. pip install depthai
-    6. pip install depthai-sdk
-    7. pip install onnx
-    8. pip install onnxruntime
-    9. pip install onnxsim
-
-### **To Note**
-- YoloV5 & YoloV7 are different repositories, thus different way of loading models.
-- Use respective inference python files
+- **To Note for part 4 - 6**
+    - YoloV5 & YoloV7 have different ways of loading models.
+    - Use respective python files
 
 ## **4 - Training**
 1. Run jupyter notebook
@@ -108,25 +101,26 @@ label-studio
         ```
         jupyter notebook
         ```
-        find to ./yv5/training.ipynb **OR** ./yv7/training.ipynb
+        find to ./training.ipynb
 
     - Anaconda
-        1. Search for anaconda navigator on terminal/search bar
-        2. Open jupyter notebook
-        3. Click on Upload
-        4. Search for easy2yolo/yv5/training.ipynb **OR** easy2yolo/yv7/training.ipynb
+        - Search for anaconda navigator on terminal/search bar
+        - Open jupyter notebook
+        
+        - Click on Upload
+        - Search for ./training.ipynb
 
-
-
-2. Edit yaml file in yolov5 **or** yolov7 folder ([template](./data.yaml))
+2. Edit yaml file in **yolov5**/**yolov7** folder ([template](./data.yaml))
 3. Run dependencies commands
-4. Choose yolov5 **or** yolov7 pretrain weights
+4. Choose **yolov5**/**yolov7** pretrain weights
 5. Run training command
 6. Locate trained pt weights (./yolov5/runs/train/exp/weights **or** ./yolov7/runs/train/exp/weights)
 
 ## **5 - Conversion**
 1. Setup conversion file
-- cd easy2yolo/yv5 **OR** cd easy2yolo/yv7
+
+- cd /yv5 **OR** cd /yv7
+
 - Edit fpath to location of trained pt weights on conversion.py
 
 2. Run conversion
