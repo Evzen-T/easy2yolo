@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import cv2
 
-model = torch.hub.load('../yolov7', 'custom', path='../yolov7/runs/train/exp/weights/best.pt', source='local', force_reload=True)
+model = torch.hub.load('../yolov7', path='../yolov7/runs/train/exp/weights/best.pt', source='local', force_reload=True)
 
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FPS,30)
