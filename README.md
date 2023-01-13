@@ -71,28 +71,42 @@ label-studio
 ---
 ### **Things to do before continuing**
 - Install **jupyter notebook**
+
     1. Locally
         - pip install notebook
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
+
 - Choose **Yolo Framework**
+
     - YoloV5 [Training](yv5/training.ipynb) / [Github repo](https://github.com/ultralytics/yolov5)
+
     - YoloV7 [Training](yv7/training.ipynb) / [Github repo](https://github.com/WongKinYiu/yolov7)
 
 - **Virtual Environment**
 
     - YoloV5
-        1. python3 -m venv virtualv5
-        2. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
-        3. pip install -r requirements.txt
+        1. cd yv5
+
+        2. python3 -m venv virtualv5
+
+        3. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
+
+        4. pip install -r requirements.txt
 
     - YoloV7
-        1. python3 -m venv virtualv7
-        2. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
-        3. pip install -r requirements.txt
+        1. cd yv7
+
+        2. python3 -m venv virtualv7
+
+        3. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
+
+        4. pip install -r requirements.txt
 
 - **To Note for part 4 - 6**
+
     - YoloV5 & YoloV7 have different ways of loading models.
+
     - Use respective python files
 
 ## **4 - Training**
@@ -124,7 +138,7 @@ label-studio
 - Edit fpath to location of trained pt weights on conversion.py
 
 2. Run conversion
-python3 conversion.py
+- python3 conversion.py
 
 ## **6 - Inference**
 
