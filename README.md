@@ -79,9 +79,13 @@ label-studio
 
 - Choose **Yolo Framework**
 
-    - YoloV5 [Training](yv5/training.ipynb) / [Github repo](https://github.com/ultralytics/yolov5)
+    - YoloV5 Training / [Github repo](https://github.com/ultralytics/yolov5)
 
-    - YoloV7 [Training](yv7/training.ipynb) / [Github repo](https://github.com/WongKinYiu/yolov7)
+    - YoloV7 Training / [Github repo](https://github.com/WongKinYiu/yolov7)
+
+- **Update submodules**
+
+    - git submodule update --force --recursive --init
 
 - **Virtual Environment**
 
@@ -94,6 +98,8 @@ label-studio
 
         4. pip install -r requirements.txt
 
+        5. pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+
     - YoloV7
         1. cd yv7
 
@@ -102,6 +108,8 @@ label-studio
         3. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
 
         4. pip install -r requirements.txt
+
+        5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 
 - **To Note for part 4 - 6**
 
