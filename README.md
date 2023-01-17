@@ -1,4 +1,7 @@
 # **Easy to Yolo**
+
+![easy2yolo](./media/easy2yolo.png)
+
 ## **A Easy step by step guide to YoloV5 & YoloV7**
 1. [Decide on object to detect](https://github.com/Evzen-T/easy2yolo#1---decide-on-object-to-detect)
 2. [Dataset Collection](https://github.com/Evzen-T/easy2yolo#2---dataset-collection)
