@@ -77,6 +77,8 @@ label-studio
 
     1. Locally
         - pip install notebook
+        - ipython kernel install --user --name=< Insert virtual environment name >
+        - Change kernel from python3 to virtual environment kernel
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
 
@@ -92,27 +94,51 @@ label-studio
 
 - **Virtual Environment**
 
-    - YoloV5
-        1. cd yv5
+    - For Linux
+        - YoloV5
+            1. cd yv5
 
-        2. python3 -m venv virtualv5
+            2. python3 -m venv virtualv5
 
-        3. source virtualv5/bin/activate **OR** source virtualv5/scripts/activate
+            3. source virtualv5/bin/activate
 
-        4. pip install -r requirements.txt
+            4. pip install -r requirements.txt
 
-        5. pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+            5. pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 
-    - YoloV7
-        1. cd yv7
+        - YoloV7
+            1. cd yv7
 
-        2. python3 -m venv virtualv7
+            2. python3 -m venv virtualv7
 
-        3. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
+            3. source virtualv7/bin/activate
 
-        4. pip install -r requirements.txt
+            4. pip install -r requirements.txt
 
-        5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+            5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+
+    - For Windows
+        - YoloV5
+            1. cd yv5
+
+            2. python -m venv virtualv5
+
+            3. source virtualv5/Scripts/activate
+
+            4. pip install -r requirements.txt
+
+            5. pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+
+        - YoloV7
+            1. cd yv7
+
+            2. python -m venv virtualv7
+
+            3. source virtualv7/Scripts/activate
+
+            4. pip install -r requirements.txt
+
+            5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 
 - **To Note for part 4 - 6**
 
