@@ -1,5 +1,4 @@
 # **Easy to Yolo**
-<<<<<<< HEAD
 ## **Object detection Workflow with YoloV5 & YoloV7**
 1. YoloV5 [Workflow]() / [Github repo](https://github.com/ultralytics/yolov5)
 2. YoloV7 [Workflow]() / [Github repo](https://github.com/WongKinYiu/yolov7)
