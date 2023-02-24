@@ -1,4 +1,5 @@
 # **Easy to Yolo**
+<<<<<<< HEAD
 ## **Object detection Workflow with YoloV5 & YoloV7**
 1. YoloV5 [Workflow]() / [Github repo](https://github.com/ultralytics/yolov5)
 2. YoloV7 [Workflow]() / [Github repo](https://github.com/WongKinYiu/yolov7)
@@ -6,6 +7,12 @@
 ---
 
 ### **YoloV5 workflow**
+=======
+
+![easy2yolo](./media/easy2yolo.png)
+
+## **A Easy step by step guide to YoloV5 & YoloV7**
+>>>>>>> 18688774a2cd1a38490d851ea5f3b6bcf538e6c5
 1. [Decide on object to detect](https://github.com/Evzen-T/easy2yolo#1---decide-on-object-to-detect)
 2. [Dataset Collection](https://github.com/Evzen-T/easy2yolo#2---dataset-collection)
 3. [Dataset Annotation + Cleaning](https://github.com/Evzen-T/easy2yolo#3---dataset-annotation--cleaning)
@@ -81,6 +88,8 @@ label-studio
 
     1. Locally
         - pip install notebook
+        - ipython kernel install --user --name=< Insert virtual environment name >
+        - Change kernel from python3 to virtual environment kernel
     2. Anaconda
         - [Step by step guide](https://docs.anaconda.com/anaconda/install/windows/)
 
@@ -90,6 +99,7 @@ label-studio
 
 - **Virtual Environment**
 
+<<<<<<< HEAD
     1. cd yv5
 
     2. python3 -m venv virtualv5
@@ -245,6 +255,53 @@ label-studio
     1. cd yv7
 
     2. python3 -m venv virtualv7
+=======
+    - For Linux
+        - YoloV5
+            1. cd yv5
+
+            2. python3 -m venv virtualv5
+
+            3. source virtualv5/bin/activate
+
+            4. pip install -r requirements.txt
+
+            5. pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+
+        - YoloV7
+            1. cd yv7
+
+            2. python3 -m venv virtualv7
+
+            3. source virtualv7/bin/activate
+
+            4. pip install -r requirements.txt
+
+            5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+
+    - For Windows
+        - YoloV5
+            1. cd yv5
+
+            2. python -m venv virtualv5
+
+            3. source virtualv5/Scripts/activate
+
+            4. pip install -r requirements.txt
+
+            5. pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+
+        - YoloV7
+            1. cd yv7
+
+            2. python -m venv virtualv7
+
+            3. source virtualv7/Scripts/activate
+
+            4. pip install -r requirements.txt
+
+            5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
+>>>>>>> 18688774a2cd1a38490d851ea5f3b6bcf538e6c5
 
     3. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
 
