@@ -7,15 +7,10 @@
 ---
 
 ### **YoloV5 workflow**
-=======
-
-![easy2yolo](./media/easy2yolo.png)
-
-## **A Easy step by step guide to YoloV5 & YoloV7**
->>>>>>> 18688774a2cd1a38490d851ea5f3b6bcf538e6c5
 1. [Decide on object to detect](https://github.com/Evzen-T/easy2yolo#1---decide-on-object-to-detect)
 2. [Dataset Collection](https://github.com/Evzen-T/easy2yolo#2---dataset-collection)
 3. [Dataset Annotation + Cleaning](https://github.com/Evzen-T/easy2yolo#3---dataset-annotation--cleaning)
+-  [Things to do before continuing](https://github.com/Evzen-T/easy2yolo#things-to-do-before-continuing)
 4. [Training](https://github.com/Evzen-T/easy2yolo#4---training)
 5. [Conversion](https://github.com/Evzen-T/easy2yolo#5---conversion)
 6. [Inference](https://github.com/Evzen-T/easy2yolo#6---inference)
@@ -99,7 +94,6 @@ label-studio
 
 - **Virtual Environment**
 
-<<<<<<< HEAD
     1. cd yv5
 
     2. python3 -m venv virtualv5
@@ -170,12 +164,13 @@ Inference with **Images**
 ---
 
 ### **YoloV7 workflow**
-1. [Decide on object to detect](https://github.com/Evzen-T/easy2yolo#1---decide-on-object-to-detect)
-2. [Dataset Collection](https://github.com/Evzen-T/easy2yolo#2---dataset-collection)
-3. [Dataset Annotation + Cleaning](https://github.com/Evzen-T/easy2yolo#3---dataset-annotation--cleaning)
-4. [Training](https://github.com/Evzen-T/easy2yolo#4---training)
-5. [Conversion](https://github.com/Evzen-T/easy2yolo#5---conversion)
-6. [Inference](https://github.com/Evzen-T/easy2yolo#6---inference)
+1. [Decide on object to detect](https://github.com/Evzen-T/easy2yolo#1---decide-on-object-to-detect-1)
+2. [Dataset Collection](https://github.com/Evzen-T/easy2yolo#2---dataset-collection-1)
+3. [Dataset Annotation + Cleaning](https://github.com/Evzen-T/easy2yolo#3---dataset-annotation--cleaning-1)
+-  [Things to do before continuing](https://github.com/Evzen-T/easy2yolo#things-to-do-before-continuing-1)
+4. [Training](https://github.com/Evzen-T/easy2yolo#4---training-1)
+5. [Conversion](https://github.com/Evzen-T/easy2yolo#5---conversion-1)
+6. [Inference](https://github.com/Evzen-T/easy2yolo#6---inference-1)
 
 #### **1 - Decide on object to detect**
 - Whats the issue at hand?
@@ -301,7 +296,7 @@ label-studio
             4. pip install -r requirements.txt
 
             5. pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
->>>>>>> 18688774a2cd1a38490d851ea5f3b6bcf538e6c5
+
 
     3. source virtualv7/bin/activate **OR** source virtualv7/scripts/activate
 
